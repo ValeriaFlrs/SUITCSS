@@ -1,0 +1,141 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #fff;
+    margin: 15px;
+    
+}
+
+.header__logo{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 5px;
+    height:  18px;
+}
+
+.header__nav{
+    display: flex;
+}
+
+.header__menu{
+    list-style: none;
+    display: flex;
+    gap:15px;
+    margin: 0;
+    padding: 0;
+    margin-right: 20vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header__link {
+    color: black;
+    text-decoration: none;
+    color: 000;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.header__hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.header__hamburger span{
+    display: block;
+    width: 100%p;
+    height: 2px;
+    background-color: #000;
+    border-radius: 1px;
+}
+
+
+.main{
+    padding: 0px
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    gap:10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    grid-template-areas: 
+    "item1 item2 item3 item4 item5 item5"
+    "item6 item7 item3 item8 item5 item5"
+    "item9 item9 item10 item11 item12 item13"
+    "item9 item9 item14 item15 item12 item16"
+    "item17 item17 item18 item19 item20 item21";
+}
+
+.grid__item{
+    position: relative;
+    width: 100%;
+  overflow: hidden;
+}
+
+.grid__item--1 { grid-area: item1; }
+.grid__item--2 { grid-area: item2; }
+.grid__item--4 { grid-area: item3; }
+.grid__item--5 { grid-area: item5; }
+.grid__item--6 { grid-area: item6; }
+.grid__item--7 { grid-area: item7; }
+.grid__item--8 { grid-area: item8; }
+.grid__item--9 { grid-area: item9; }
+.grid__item--10 { grid-area: item10; }
+.grid__item--11 { grid-area: item11; }
+.grid__item--12 { grid-area: item12; }
+.grid__item--13 { grid-area: item13; }
+.grid__item--14 { grid-area: item14; }
+.grid__item--15 { grid-area: item15; }
+.grid__item--16 { grid-area: item16; }
+.grid__item--17 { grid-area: item17; }
+.grid__item--18 { grid-area: item18; }
+.grid__item--19 { grid-area: item19; }
+.grid__item--20 { grid-area: item20; }
+.grid__item--21 { grid-area: item21; }
+
+.grid__item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    transition: transform .3s ease-in-out;
+    transform-origin: top center;
+    
+  }
+
+  .grid__item img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    
+  }
+
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: fff;
+}
+
+.footer__text{
+    margin: 5px 0;
+    color: #666;
+}
