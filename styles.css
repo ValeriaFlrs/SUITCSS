@@ -66,7 +66,7 @@ body{
 .grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(5, 200px);
     gap:10px;
     width: 100%;
     max-width: 1200px;
@@ -138,4 +138,14 @@ body{
 .footer__text{
     margin: 5px 0;
     color: #666;
+    font-size: 12px;
+}
+
+.main__low{
+    justify-self: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
 }
