@@ -1,0 +1,52 @@
+.acordeon{
+    width: 50%;
+    justify-self: center;
+    background-color: rgb(245, 246, 247);
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.acordeon .bloque{
+    background-color: rgb(238, 237, 236);
+    margin:  0 0 1em;
+    padding: 1em;
+    width: 300px;
+    justify-self: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px;
+}
+
+.acordeon .h2{
+    background-color: rgb(247, 244, 242);
+    margin: 0 0 1em;
+    padding:  1em;
+    cursor: pointer;
+    color: rgb(107, 106, 106);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px;
+    text-align: center;
+}
+
+.acordeon .h1{
+
+    cursor: pointer;
+    color: rgb(107, 106, 106);
+    text-align: center;
+}
+
+.acordeon .contenido{
+    height: 0px;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+    color: rgb(107, 106, 106);
+    text-align: center;
+
+}
+
+.acordeon .bloque.activo .contenido{
+    transition: height 0.5s ease;
+
+}
